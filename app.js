@@ -9,7 +9,7 @@ const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
-var mongoose = require('./config/mongoose.js');
+var mongoose = require('./lib/config/mongoose.js');
 
 var db = mongoose();
 
