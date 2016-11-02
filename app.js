@@ -10,7 +10,6 @@ const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
 var mongoose = require('./lib/config/mongoose.js');
-
 var db = mongoose();
 
 const index = require('./routes/index');
