@@ -22,7 +22,7 @@ router.get('/newest', async function(ctx, next) {
 	console.log('users/newest');
 	var newsController = new NewsController();
 	var items = await newsController.findAllNewest();
-	ctx.body = JSON.stringify(items);
+	ctx.body = items;
 })
 
 module.exports = router;
